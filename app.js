@@ -1,6 +1,7 @@
 // import functions and grab DOM elements
-const locationSelector = document.getElementById('locationSelect');
+const locationSelector = document.getElementById('location-select');
 const locationDiv = document.getElementById('location');
+// const architectureSelector = document.getElementById('architecture-select');
 
 const reportEl = document.getElementById('report');
 
