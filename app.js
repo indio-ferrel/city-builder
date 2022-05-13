@@ -46,3 +46,14 @@ sloganButton.addEventListener('click', () => {
 function displayStats() {
     reportEl.textContent = `You have changed the location ${locationCount} times, the architecture ${architectureCount} times, and your neighbor ${neighborCount} times.`;
 }
+
+function displaySlogans() {
+    slogansEl.textContent = '';
+    const slogans = document.getElementById('slogans');
+
+    for (let tagline of slogan) {
+        const li = document.createElement('li');
+        li.textContent = tagline;
+        slogans.append(li);
+    }
+}
