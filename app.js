@@ -5,13 +5,16 @@ const architectureSelector = document.getElementById('architecture-select');
 const architectureDiv = document.getElementById('architecture-div');
 const neighborSelector = document.getElementById('neighbor-select');
 const neighborDiv = document.getElementById('neighbor-div');
-
+const sloganButton = document.getElementById('slogan-button');
+const sloganInput = document.getElementById('slogan-input');
 const reportEl = document.getElementById('report');
+const slogansEl = document.getElementById('slogans');
 
 // let state
 let locationCount = 0;
 let architectureCount = 0;
 let neighborCount = 0;
+let slogan = [];
 
 // event listeners
 locationSelector.addEventListener('change', () => {
@@ -30,6 +33,12 @@ neighborSelector.addEventListener('change', () => {
     neighborCount++;
     neighborDiv.style.backgroundImage = `url('./assets/${neighborSelector.value}.jpg')`;
     displayStats();
+});
+
+sloganButton.addEventListener('click', () => {
+    slogan.push(sloganInput.value);
+    sloganInput.value = '';
+    displaySlogans();
 });
 
 // called functions
