@@ -2,3 +2,16 @@ body {
     font-family: 'Courier Prime', monospace;
 }
     /* Also remember Roboto (tons of variants, including serif variants Serif and Slab), Open Sans, Noto Sans */
+
+.location {
+    background-image: url('/assets/Forest.png');
+    max-width: 600px;
+}
+
+#architecture {
+    background-image: url('/assets/Forest.png');
+}
+
+#neighbor {
+    background-image: url('/assets/neighbor.png');
+}

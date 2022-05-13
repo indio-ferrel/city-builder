@@ -35,5 +35,5 @@ neighborSelector.addEventListener('change', () => {
 // called functions
 
 function displayStats() {
-    reportEl.textContent = `You have changed the location ${locationCount} times, the architecture 0 times, and the other thing 0 times.`;
+    reportEl.textContent = `You have changed the location ${locationCount} times, the architecture ${architectureCount} times, and your neighbor ${neighborCount} times.`;
 }
