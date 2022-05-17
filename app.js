@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
 const locationSelector = document.getElementById('location-select');
-const locationDiv = document.getElementById('location');
+const locationDiv = document.getElementById('location-div');
 const architectureSelector = document.getElementById('architecture-select');
 const architectureDiv = document.getElementById('architecture-div');
 const neighborSelector = document.getElementById('neighbor-select');
@@ -19,7 +19,7 @@ let slogan = [];
 // event listeners
 locationSelector.addEventListener('change', () => {
     locationCount++;
-    locationDiv.style.backgroundImage = `url('./assets/${locationSelector.value}farthing.jpg')`;
+    locationDiv.style.backgroundImage = `url(./assets/${locationSelector.value}farthing.jpg)`;
     displayStats();
 });
 
