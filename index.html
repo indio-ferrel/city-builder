@@ -15,35 +15,73 @@
 </head>
 
 <body>
+
     <header>
         <div class="gutter-right logo">
             <img src="./assets/big-logo.png" />
         </div>
     </header>
+    
     <main>
-            <h2>What are city?  You can live anywhere you would like, as long as it's in the Shire</h2>
+            <h2>You can live anywhere you want, as long as it's in the Shire.</h2>
+
             <div class="choosing">
-                <section id = "locationLocationLocation">
-                    <h4>Farthing</h4>
-                    <select id="locationSelect">
-                        <option value="wast">Eastfarthing</option>
+                <section id = "location-location-location">
+                    <h4>Select a Farthing of the Shire</h4>
+                    <select id="location-select">
+                        <option value="east">Eastfarthing</option>
                         <option value="west">Westfarthing</option>
                         <option value="north">Northfarthing</option>
                         <option value="south">Southfarthing</option>
                     </select>
-                    <div id="location"></div>
+                    <div id="location-div"></div>
                 </section>
+
+                <section id = "architecture">
+                    <h4>Select architecture</h4>
+                    <select id="architecture-select">
+                        <option value="bagend">Hobbit-hole (correct)</option>
+                        <option value="anotherSmial">Smial (another word for hobbit-hole)</option>
+                        <option value="rohan">Rohirric (not appropriate for the Shire)</option>
+                        <option value="saruman">Orthanc (even more wrong)</option>
+                    </select>
+                    <div id="architecture-div"></div>
+                </section>
+
+                <section id = "neighbor">
+                    <h4>Pick a neighbor</h4>
+                    <select id="neighbor-select">
+                        <option value="frodo">Frodo</option>
+                        <option value="sam">Sam</option>
+                        <option value="merry">Merry</option>
+                        <option value="pippin">Pippin</option>
+                    </select>
+                    <div id="neighbor-div"></div>
+                </section>
+            </div>
+
+            <div class="slogan-div">
+                <section>
+                    <h2>Add a slogan</h2>
+                    <input id = "slogan-input">
+                    <br>
+                    <button id = "slogan-button">Add</button>
+                    <div id="slogans"></ul>
+                </section>
+            
                 <section>
                     <div id="stats">
                         <p id="report"></p></p>
                     </div>
                 </section>
+            </div>
     </main>
+
     <footer>
         <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
 
     <script type="module" src="./app.js"></script>
 </body>
-
+<!-- arbitrary change -->
 </html>

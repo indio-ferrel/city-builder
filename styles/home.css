@@ -2,3 +2,57 @@ body {
     font-family: 'Courier Prime', monospace;
 }
     /* Also remember Roboto (tons of variants, including serif variants Serif and Slab), Open Sans, Noto Sans */
+
+.choosing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+}
+
+.slogan-div {
+
+}
+
+#location-div {
+    background-image: url('../assets/eastfarthing.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100%; */
+    border: 4px dashed green;
+    border-radius: 10px;
+    height: 250px;
+    margin: auto;
+    padding: 5px;
+    width: 425px;
+}
+
+#architecture-div {
+    background-image: url('../assets/bagend.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100%; */
+    border: 4px dashed green;
+    border-radius: 10px;
+    height: 250px;
+    margin: auto;
+    padding: 5px;
+    width: 425px;
+}
+
+#neighbor-div {
+    background-image: url('../assets/frodo2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100%; */
+    border: 4px dashed green;
+    border-radius: 10px;
+    height: 250px;
+    margin: auto;
+    padding: 5px;
+    width: 425px;
+}
